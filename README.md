@@ -13,7 +13,7 @@ Arm second = new Arm(new Long(2), "Option 2", "image2.jpg");
 options.add(first);
 options.add(second);
 
-BaseStrategy stragegy = new EpsilonGreedy(options, 0.1);
+BaseStrategy strategy = new EpsilonGreedy(options, 0.1);
 Arm selected = strategy.selectArm();
 
 double reward = (Math.random() >= 0.5) ? 1.0 : 0.0;
